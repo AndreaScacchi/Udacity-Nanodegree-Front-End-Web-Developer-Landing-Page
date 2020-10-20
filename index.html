@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ROME</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>ROME</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>The Colosseum</h2>
+        <p>The Colosseum, also known as the Flavian Amphitheatre, is an oval amphitheatre in the centre of the city of Rome, Italy. Construction began under the emperor Vespasian and completed under his successor Titus, it was the largest amphitheatre ever built at the time and held 50,000 to 80,000 spectators. The Colosseum was used for gladiator contests, public spectacles, animal hunts, executions, re-enactments of famous battles and drama based on Roman mythology.<br>The Colosseum is still an iconic symbol of Imperial Rome and is listed as one of the New7Wonders of the World.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Altar of the Fatherland</h2>
+        <p>The Victor Emmanuel II National Monument, or, Vittoriano, called Altare della Patria, is a national monument built in honour of Victor Emmanuel II, the first king of a unified Italy, located in Rome. Located in the centre of ancient Rome, it has been consecrated to a wide symbolic value representing a lay temple metaphorically dedicated to a free and united Italy—celebrating by virtue the burial of the Unknown Soldier (the sacrifice for the homeland and for the connected ideals).<br>After World War II, with the institution of the Italian Republic in 1946, the monument was stripped of all its Fascist symbols and reassumed its original function as a secular temple dedicated to the Italian nation and its people.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>The Roman Forum</h2>
+        <p>The Roman Forum, also known by its Latin name Forum Romanum, is a rectangular forum (plaza) surrounded by the ruins of several important ancient government buildings at the center of the city of Rome. For centuries the Forum was the center of day-to-day life in Rome: the site of triumphal processions and elections; the venue for public speeches, criminal trials, and gladiatorial matches; and the nucleus of commercial affairs. Here statues and monuments commemorated the city's great men.<br> Located in the small valley between the Palatine and Capitoline Hills, the Forum today is a sprawling ruin of architectural fragments and intermittent archaeological excavations attracting 4.5 million or more sightseers yearly.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>The Pantheon</h2>
+        <p>The Pantheon, is a former Roman temple, now a Catholic church (Basilica of St. Mary and the Martyrs). It is one of the best-preserved of all Ancient Roman buildings, in large part because it has been in continuous use throughout its history and, since the 7th century, the Pantheon has been in use as a church dedicated to "St. Mary and the Martyrs" (Latin: Sancta Maria ad Martyres). Two kings of Italy are buried in the Pantheon: Vittorio Emanuele II and Umberto I, as well as Umberto's Queen, Margherita.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"> </script>
+</body>
+</html>
