@@ -8,11 +8,14 @@ function makeActive() {
     for (const section of sections) {
         const item = section.getBoundingClientRect();
         if (item.top <= 150 && item.bottom >= 150) {
+           section.classList.add('your-active-class');
            
+        }else {
+            section.classList.remove('your-active-class');
         }
     }
 }
-
+document.addEventListener('scroll', makeActive);
 
 
 // build the navbar
