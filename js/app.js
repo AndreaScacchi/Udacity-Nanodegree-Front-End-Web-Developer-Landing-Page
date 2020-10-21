@@ -34,3 +34,15 @@ function createNav() {
     }
 }
 createNav();
+
+//build the button
+const myButton = document.querySelector('.btn');
+
+function theButton() {
+    myButton.addEventListener('click', function () {
+        window.scrollTo({behavior: 'smooth',
+    top: 0});
+}
+)};
+
+theButton();
