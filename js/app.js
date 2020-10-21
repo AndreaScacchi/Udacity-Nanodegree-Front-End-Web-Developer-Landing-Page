@@ -19,8 +19,9 @@ document.addEventListener('scroll', makeActive);
 
 
 // build the navbar
-for (let section of sections) {
+for (section of sections) {
     const listElement = document.createElement('li');
+    listElement.className = 'landing__container';
     listElement.innerHTML = `<a href="#${section.id}">${section.dataset.nav}</a>`;
     navbar.appendChild(listElement);
 }
