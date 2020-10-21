@@ -8,20 +8,29 @@ function makeActive() {
     for (const section of sections) {
         const item = section.getBoundingClientRect();
         if (item.top <= 150 && item.bottom >= 150) {
-           section.classList.add('your-active-class');
-           
+            section.classList.add('your-active-class');
         }else {
             section.classList.remove('your-active-class');
         }
     }
 }
-document.addEventListener('scroll', makeActive);
+document.addEventListener('scroll', function () {
+    makeActive();
+});
 
 
-// build the navbar
-for (section of sections) {
-    const listElement = document.createElement('li');
-    listElement.className = 'landing__container';
-    listElement.innerHTML = `<a href="#${section.id}">${section.dataset.nav}</a>`;
-    navbar.appendChild(listElement);
+
+//build navbar dynamically
+function createNav() {
+    for (let item of sections) {
+        let theMenu = document.createElement("li");
+        theMenu.className = "menu__link";
+        theMenu.dataset.nav = item.id;
+        theMenu.innerText = item.dataset.nav;
+        theMenu.addEventListener('click', function () {
+            item.scrollIntoView({behavior: "smooth"})
+        })
+        navbar.appendChild(theMenu);
+    }
 }
+createNav();
