@@ -12,7 +12,6 @@
 /* ---- Base Rules ---- */
 body {
     background: rgb(252, 163, 17);
-    /*background: linear-gradient(0deg, rgb(252, 163, 17); 0%, rgb(208, 0, 0) 100%);*/
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #000000;
@@ -24,6 +23,7 @@ h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 3em;
     margin: 2em 1rem;
+    text-align: center;
 }
 
 @media only screen and (min-width: 35em){
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     border-bottom: 1px solid #cc1;
-    font-family: 'Oxygen', Sans-Serif;
+    font-family: 'Oxygen', serif;
     font-size: 3em;
     color: #000000;
 }
@@ -43,6 +43,8 @@ h2 {
 p {
     line-height: 1.6em;
     color: #eee;
+    font-style: italic;
+    font-family: inherit;
 }
 
 /* ---- Layout Rules ---- */
@@ -64,10 +66,32 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.btn {
+    background-color: black;
+    color: rgb(252, 163, 17);
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px #999;
+}
+
+.btn:active {
+    position: relative;
+    background-color: rgb(252, 163, 17);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 .navbar__menu ul {
     padding-left: 0;
-    margin: 0;
-    text-align: right;
+    margin: 50;
+    text-align: center;
 }
 
 .navbar__menu li {
@@ -75,17 +99,17 @@ section {
 }
 
 .navbar__menu .menu__link {
-    display: block;
-    padding: 1em;
+    display: inline;
+    padding: 3em;
     font-weight: bold;
     text-decoration: none;
     color: #000;
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
+    background: black;
     color: #fff;
-    transition: ease 0.3s all;
+    transition: ease 1.3s all;
 }
 
 /* Header Styles */
