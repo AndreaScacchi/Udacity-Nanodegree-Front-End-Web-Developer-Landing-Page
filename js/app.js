@@ -23,17 +23,18 @@ document.addEventListener('scroll', function () {
 //build navbar dynamically
 function createNav() {
     for (let item of sections) {
-        let theMenu = document.createElement("li");
-        theMenu.className = "menu__link";
-        theMenu.dataset.nav = item.id;
-        theMenu.innerText = item.dataset.nav;
-        theMenu.addEventListener('click', function () {
+        let myNav = document.createElement("li");
+        myNav.className = "menu__link";
+        myNav.dataset.nav = item.id;
+        myNav.innerText = item.dataset.nav;
+        myNav.addEventListener('click', function () {
             item.scrollIntoView({behavior: "smooth"})
         })
-        navbar.appendChild(theMenu);
+        navbar.appendChild(myNav);
     }
 }
 createNav();
+
 
 //build the button
 const myButton = document.querySelector('.btn');
