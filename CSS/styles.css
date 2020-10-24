@@ -25,6 +25,76 @@ h1 {
     margin: 2em 1rem;
     text-align: center;
 }
+/*@media (min-width: 300px) and (max-width: 380px) {
+    #navbar__list {
+        display: flex;
+        font-size: 8px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 599px) {
+    #navbar__list {
+        display: flex;
+        font-size: 9px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 599px) and (max-width:750px) {
+    #navbar__list {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 750px) {
+    #navbar__list {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-around;
+    }
+}*/
+@media (max-width: 500px) {
+    #navbar__list {
+        display: flex;
+        justify-content: space-around;
+        font-size: 7px;
+    }
+    h2, p {
+        font-size: 10px;
+        font-style: oblique;
+    }
+    body {
+        background-color: #2d6a4f;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+    #navbar__list {
+        display: flex;
+        justify-content: space-around;
+        font-size: 9px;
+    }
+    h2, p {
+        font-size: 12px;
+        font-variant: small-caps;
+    }
+    body {
+        background-color: #00b4d8;
+    }
+}
+
+@media (min-width: 750px) {
+    #navbar__list {
+        display: flex;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+}
+
+
 
 @media only screen and (min-width: 35em){
     h1 {
@@ -34,7 +104,7 @@ h1 {
 }
 
 h2 {
-    border-bottom: 1px solid #cc1;
+    border-bottom: 3px solid black;
     font-family: 'Oxygen', serif;
     font-size: 3em;
     color: #000000;
@@ -85,7 +155,7 @@ section {
 .btn:active {
     position: relative;
     background-color: rgb(252, 163, 17);
-    box-shadow: 0 5px #666;
+    box-shadow: 0 5px #6666;
     transform: translateY(4px);
 }
 .navbar__menu ul {
@@ -146,6 +216,8 @@ section {
         padding: 4em;
     }
 }
+
+
 
 section:nth-of-type(even) .landing__container {
     margin-right: 0;
