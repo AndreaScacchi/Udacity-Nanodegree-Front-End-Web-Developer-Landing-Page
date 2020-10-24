@@ -25,37 +25,7 @@ h1 {
     margin: 2em 1rem;
     text-align: center;
 }
-/*@media (min-width: 300px) and (max-width: 380px) {
-    #navbar__list {
-        display: flex;
-        font-size: 8px;
-        justify-content: space-around;
-    }
-}
 
-@media (min-width: 381px) and (max-width: 599px) {
-    #navbar__list {
-        display: flex;
-        font-size: 9px;
-        justify-content: space-around;
-    }
-}
-
-@media (min-width: 599px) and (max-width:750px) {
-    #navbar__list {
-        display: flex;
-        font-size: 12px;
-        justify-content: space-around;
-    }
-}
-
-@media (min-width: 750px) {
-    #navbar__list {
-        display: flex;
-        font-size: 12px;
-        justify-content: space-around;
-    }
-}*/
 @media (max-width: 500px) {
     #navbar__list {
         display: flex;
